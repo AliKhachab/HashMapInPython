@@ -246,13 +246,6 @@ class HashMap:
         return res
 
     def getLoad(self):
-
+        """Returns the load of the map."""
         return self.__load
 
-
-hm = HashMap(5)
-for i in range(0, 10, 2):
-    hm.insertOrReplace(i, i + 1)
-
-print(hm)
-print(hm.getLoad())  # getLoad was just for me to check if my resizing worked. basically debugging tool.
